@@ -1,0 +1,13 @@
+.error404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sign404 {
+  color: $red;
+  font-size: 300px;
+  padding: 3rem;
+}

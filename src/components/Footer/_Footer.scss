@@ -1,0 +1,13 @@
+footer {
+  background-color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  color: $red;
+  font-weight: 700;
+
+  span {
+    font-weight: 300;
+  }
+}

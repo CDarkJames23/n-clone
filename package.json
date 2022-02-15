@@ -1,0 +1,63 @@
+{
+  "name": "react-netflix-clone",
+  "version": "1.0.0",
+  "description": "Netflix Clone in React",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development  webpack-dev-server --mode development --open --hot",
+    "build": "cross-env NODE_ENV=build ./node_modules/.bin/webpack --mode build",
+    "prod": "cross-env NODE_ENV=production  ./node_modules/.bin/webpack --mode production",
+    "lint": "eslint \"**/*.{js,jsx}\"",
+    "prepare": "husky install",
+    "code:check": "./node_modules/.bin/eslint '**/*.js'",
+    "code:fix": "./node_modules/.bin/eslint '**/*.js' --fix"
+  },
+  "author": "Adam Lnenicka",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "formik": "^2.2.9",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "json-loader": "^0.5.7",
+    "lint-staged": "^12.1.2",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^6.0.1",
+    "prettier": "2.4.1",
+    "prop-types": "^15.7.2",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "node-sass": "^6.0.1",
+    "prop-types": "^15.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
